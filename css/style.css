@@ -75,7 +75,7 @@ a.nav-link:hover {
   position: absolute;
   bottom: 8vh;
   left: 2em;
-  z-index: 1000;
+  z-index: 99;
   max-width:380px;
 }
 
@@ -99,11 +99,11 @@ a.nav-link:hover {
 
 .articleTitle {
   font-family: acumin-pro, sans-serif;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: bold; 
   color: white;
   text-shadow: 0 3px 6px #333;
-  line-height: 44px;
+  line-height: 38px;
 }
 
 .articleTitle a {
@@ -150,7 +150,7 @@ a.nav-link:hover {
   padding: 1em 2em;
   border-radius: 5em;
   font-weight: bold;
-  opacity: 0.8;
+  
 }
 
 .articleSlide .floatMsg {
@@ -287,6 +287,11 @@ a.nav-link:hover {
   transition: margin-left .5s;
 }
 
+#homeMain {
+  cursor: grab;
+  overflow: auto;
+}
+
 .articleWrapper {
   float: right;
 padding: 3em 4.2em !important;
@@ -376,7 +381,7 @@ ALL MEDIA CALLS
   .slide {min-width: 95vw !important;}
   .articleSlide {display: none;}
   .articleWrapper {padding: 2em !important;}
-  .articleTitle {font-size:36px;}
+  .articleTitle {font-size:28px;line-height: 30px;}
 } 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
