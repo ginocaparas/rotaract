@@ -130,13 +130,19 @@ a.nav-link:hover {
 }
 
 .slide {
-  min-height: 100vh;
   position: relative;
   /* width: 30vw; */
   min-width: 520px;
   background-size: cover !important;
   background-repeat: no-repeat;
 }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media (max-width: 575.98px) {
+  .slide {min-width: 95vw !important;}
+} 
+
+
 
 .slide:hover .articleCover {
   opacity:0.2;
@@ -216,7 +222,6 @@ a.nav-link:hover {
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
   overflow-y: scroll;
-  overflow-x: hidden;
   position: absolute;
   scrollbar-width: thin;
   -ms-overflow-style: none;
@@ -230,8 +235,6 @@ a.nav-link:hover {
 ::-webkit-scrollbar {
   display:none;
 }
-
-
 
 
 
