@@ -166,13 +166,10 @@ a.nav-link:hover {
 }
 
 .floatMsg2 {
-  bottom: 80px;
+  bottom: 18px;
   position: absolute;
-  z-index: 100;
-  left: 0;
-  background: white;
+  right: 0;
   padding: 1em 2em;
-  border-radius: 5em;
   font-weight: bold;
   opacity: 0.8;
 }
