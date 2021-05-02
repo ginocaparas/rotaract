@@ -220,7 +220,6 @@ a.nav-link:hover {
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
   overflow-y: scroll;
-  overflow-x: hidden;
   position: absolute;
   scrollbar-width: thin;
   -ms-overflow-style: none;
