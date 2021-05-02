@@ -76,7 +76,7 @@ a.nav-link:hover {
   bottom: 8vh;
   left: 2em;
   z-index: 99;
-  max-width:380px;
+  max-width:86%;
 }
 
 .articleDate {
@@ -385,7 +385,7 @@ ALL MEDIA CALLS
 } 
 
 @media (max-width: 991.98px) {
-  .slide {min-width: 95vw !important;}
+  .slide {min-width: 95vw;}
   .navbar-light .navbar-toggler {
     color: white !important;
     border: 0 !important;
