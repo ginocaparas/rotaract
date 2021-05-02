@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: acumin-pro, sans-serif;
+}
+
+#borgar:hover {
+  cursor: pointer;
+}
+
+.navbar {
+height: 75px;
+background-color: #D91B5C;
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 999;
+}
+
+.navbar-brand {
+  margin: 0 auto !important;
+}
+
+.navbar .container {
+  max-width:100vw !important;
+}
+
+.navbar .burgerMenu {
+  color: white;
+  margin-right:2em;
+}
+
+@media (max-width: 991.98px) {
+.navbar .burgerMenu {
+  margin:0 0 0.5em 1em;
+  }
+}
+
+.nav-item {
+  margin-left: 1.2em;
+} 
+
+.nav-link {
+  color: white !important ;
+}
+
+a.nav-link:hover {
+  text-decoration:  underline;  
+}
+
+.btn-subscribe01 {
+  border-radius: 4px;
+  font-weight: bold;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.btn-subscribe01 .nav-link {
+  color: brown !important ;
+}
+
+
+#main {
+  background: #111;
+}
+
+#main.articleMain {
+  background: #FFF !important;
+  overflow-x: hidden !important;
+  overflow-y:auto !important;
+}
+
+/* ARTICLE INFO */
+.articleInfoDiv {
+  position: absolute;
+  bottom: 8vh;
+  left: 2em;
+  z-index: 1000;
+  max-width:380px;
+}
+
+.articleDate {
+  font-family: acumin-pro, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 3px 6px #333;
+}
+
+.sectionTitle {
+  padding:0.3em 1em;
+  background-color:#D91B5C;
+  font-size: 18px;
+  font-family: acumin-pro, sans-serif;
+  display:inline-block;
+  color: white;
+  margin: 0.3em 0 0 !important;
+}
+
+.articleTitle {
+  font-family: acumin-pro, sans-serif;
+  font-size: 42px;
+  font-weight: bold; 
+  color: white;
+  text-shadow: 0 3px 6px #333;
+  line-height: 44px;
+}
+
+.articleTitle a {
+  color: white;  
+}
+
+.articleTitle a:hover {
+  color: gold;  
+}
+
+.articleSubTitle {
+  font-family: acumin-pro, sans-serif;
+  font-size: 18px;
+  font-style: italic; 
+  color: white;
+  text-shadow: 0 3px 6px #333;
+}
+
+.articleCover {
+  min-height: 100vh;
+  width:100%;
+  background:black;
+  opacity: 0;
+}
+
+.slide {
+  min-height: 100vh;
+  position: relative;
+  /* width: 30vw; */
+  min-width: 520px;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+}
+
+.slide:hover .articleCover {
+  opacity:0.2;
+}
+
+.floatMsg {
+  top: 99px;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  padding: 1em 2em;
+  border-radius: 5em;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.articleSlide .floatMsg {
+  top: 36px;
+}
+
+.articleSlide {
+  background-position-y: 0 !important;
+}
+
+.floatMsg2 {
+  bottom: 80px;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  background: white;
+  padding: 1em 2em;
+  border-radius: 5em;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.floatMsg3 {
+  bottom: 40px;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  font-size: small;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  direction: ltr;
+}
+
+.one {
+  background: url("https://www.rotaryphilippines.com/wp-content/uploads/2021/04/IMG-7e8122369a0dae9bb88601a83472c5d2-V-990x743.jpg");
+  background-position-y: 75px;
+}
+.two {
+  background: url("https://images.unsplash.com/photo-1600523863597-63967a1c0b10?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-position-y: 75px;
+}
+.three {
+  background: url("https://images.unsplash.com/photo-1531632584752-b8f7bda3799d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-position-y: 75px;
+}
+.four {
+  background: url("https://images.unsplash.com/photo-1610874236680-e269ac624715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80");
+  background-position-y: 75px;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+  z-index: 0;
+  top: 0;
+  background: #333;
+  direction: rtl;
+}
+
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+
+
+
+
+ /* The side navigation menu */
+.sidenav {
+  height: 100vh; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1111; /* Stay on top */
+  top: 75px; /* Stay at the top */
+  left: 0;
+  background-color: #D91B5C;
+  overflow: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.2s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: gold;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.sidenav .rotaryBanner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height:220px;
+  background: #3256A4;
+  color: white;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+.articleWrapper {
+  float: right;
+padding: 3em 4.2em !important;
+margin-top: 75px;
+background: white;
+}
+
+@media screen and (max-width: 575.98px) {
+  .articleWrapper {padding: 2em !important;}
+}
+
+.articleWrapper h1 {
+  font-weight:bold;
+}
+
+.articleMain .outer-wrapper {
+  height: auto !important;
+  position: fixed
+}
+
+
+footer {
+  padding:8em 2em 2em;
+  background:#333;
+  min-width: 360px !important;
+}
+
+footer .dropdown-menu-center {
+right: auto !important;
+left: 50% !important;
+-webkit-transform: translate(-50%, 38px) !important;
+-o-transform: translate(-50%, 38px) !important;
+transform: translate(-50%, 38px) !important;
+}
+
+.articleSlide .floatMsg {
+  color:white;
+  text-shadow: 0 3px 6px #333;
+  width: 222px;
+}
+
+.articleSlide .floatMsg a {
+  color:white;
+}
+
+.articleSlide .floatMsg:hover a, .articleSlide .floatMsg:hover .circleBorder {
+  color:gold;
+}
+
+.articleSlide .floatMsg:hover .circleBorder {
+  border:2px solid gold !important;
+}
+
+.circleBorder {
+border: 2px solid white;
+border-radius: 12em;
+width: 44px;
+height: 44px;
+padding: 12px;
+line-height: 16px;
+float: left;
+}
+
+.circleBorderText {
+line-height: 42px;
+float: right;
+}
+
+
+.articleMain .articleEndSubscribe {
+  min-height:200px;
+}
+
+.articleEndSubscribeImg {
+  background: gray;
+}
+
+.articleEndSubscribeBody {
+  background: #FEFEFE;
+}
