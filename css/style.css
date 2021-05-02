@@ -140,6 +140,7 @@ a.nav-link:hover {
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media (max-width: 575.98px) {
   .slide {min-width: 95vw !important;}
+  .articleSlide {display: none;}
 } 
 
 
