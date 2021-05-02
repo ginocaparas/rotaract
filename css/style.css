@@ -30,12 +30,6 @@ z-index: 999;
   margin-right:2em;
 }
 
-@media (max-width: 991.98px) {
-.navbar .burgerMenu {
-  margin:0 0 0.5em 1em;
-  }
-}
-
 .nav-item {
   margin-left: 1.2em;
 } 
@@ -136,13 +130,6 @@ a.nav-link:hover {
   background-size: cover !important;
   background-repeat: no-repeat;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media (max-width: 575.98px) {
-  .slide {min-width: 95vw !important;}
-  .articleSlide {display: none;}
-} 
-
 
 
 .slide:hover .articleCover {
@@ -294,21 +281,11 @@ a.nav-link:hover {
   transition: margin-left .5s;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} 
-
 .articleWrapper {
   float: right;
 padding: 3em 4.2em !important;
 margin-top: 75px;
 background: white;
-}
-
-@media screen and (max-width: 575.98px) {
-  .articleWrapper {padding: 2em !important;}
 }
 
 .articleWrapper h1 {
@@ -379,4 +356,31 @@ float: right;
 
 .articleEndSubscribeBody {
   background: #FEFEFE;
+}
+
+
+/* 
+=-=-=-=-=-=-=-=-=-=-=
+ALL MEDIA CALLS 
+=-=-=-=-=-=-=-=-=-=-=
+*/
+
+/* Mobile Screens */
+@media (max-width: 575.98px) {
+  .slide {min-width: 95vw !important;}
+  .articleSlide {display: none;}
+  .articleWrapper {padding: 2em !important;}
+  .articleTitle {font-size:36px;}
+} 
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+@media (max-width: 991.98px) {
+.navbar .burgerMenu {
+  margin:0 0 0.5em 1em;
+  }
 }
