@@ -66,7 +66,7 @@ a.nav-link:hover {
   background: #111;
 }
 
-#main.articleMain {
+#main.articleMain, .#main.sectionMain {
   background: #FFF !important;
   overflow-x: hidden !important;
   overflow-y:auto !important;
@@ -97,6 +97,15 @@ a.nav-link:hover {
   display:inline-block;
   color: white;
   margin: 0.3em 0 0 !important;
+}
+
+.sectionTitle a {
+  color:white;
+  text-decoration: underline;
+}
+
+.sectionTitle a:hover {
+  color: gold;
 }
 
 .articleTitle {
@@ -323,7 +332,7 @@ a.nav-link:hover {
   overflow: auto;
 }
 
-.articleWrapper {
+.articleWrapper, .sectionWrapper {
   padding: 3em 4.2em !important;
   margin-top: 75px;
   background: white;
@@ -334,11 +343,17 @@ a.nav-link:hover {
   font-weight:bold;
 }
 
-.articleMain .outer-wrapper {
+.articleMain .outer-wrapper, .sectionMain .outer-wrapper {
   height: auto !important;
   position: fixed
 }
 
+.coverImg {
+  position: fixed !important;
+  top: 75px;
+  padding: 0 !important;
+  overflow: hidden;
+}
 
 footer {
   padding:8em 2em 2em;
@@ -437,16 +452,16 @@ ALL MEDIA CALLS
     margin-bottom: 0.75rem;
     margin-top: 0.75rem;
   }
-  .articleMain .articleWrapper {
+  .articleMain .articleWrapper, .sectionMain .sectionWrapper {
     padding: 2em !important;
     top: 320px;
     position: absolute !important;
   }
-  .articleMain .articleSlide {
+  .articleMain .articleSlide, .sectionMain .articleSlide {
     background-position: center !important;
   }
-  .articleMain .slide {height:320px;}
-  .articleMain .floatMsg {top:0 !important}
+  .articleMain .slide, .sectionMain .slide {height:320px;}
+  .articleMain .floatMsg, .sectionMain .floatMsg {top:0 !important}
 }
 
 /* Mobile Screens */
@@ -454,12 +469,12 @@ ALL MEDIA CALLS
   .slide {min-width: 95vw !important;}
   .articleWrapper {padding: 2em !important;}
   .articleTitle {font-size:28px;line-height: 30px;}
-  .articleMain .articleWrapper {
+  .articleMain .articleWrapper, .sectionMain .sectionWrapper {
     padding: 2em !important;
     top: 240px !important;
     position: absolute !important;
   }
-  .articleMain .slide {height:240px !important;}
+  .articleMain .slide, .sectionMain .slide {height:240px !important;}
 } 
 
 
@@ -493,3 +508,5 @@ ALL MEDIA CALLS
     -webkit-transform: rotate(180deg);
     transform: translate(320px, 0);
 }
+
+
