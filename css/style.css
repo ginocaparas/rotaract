@@ -459,3 +459,23 @@ ALL MEDIA CALLS
   }
   .articleMain .slide {height:240px !important;}
 } 
+
+
+.caretRotate {
+  float:right;
+  -moz-transition: all 0.2s ease-up-down;
+  -webkit-transition: all 0.2s ease-up-down;
+  transition: all 0.2s ease-up-down;
+}
+
+
+.rotate{
+
+}
+
+.rotateUp{
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
