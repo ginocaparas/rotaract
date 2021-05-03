@@ -17,16 +17,18 @@
   <body>
   
 <!-- Side Nav -->
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav openSideNav">
   <div class="mySideNavWrapper">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">About</a>
     <div id="accordion">
     <div class="card" style="background: none;border: 0;outline: 0;border-radius:0;">
-        <a href="#" class="btn btn-link text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="border-radius: 0;box-shadow: none;">
+        <a href="#" class="btn btn-link text-left rotate" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="border-radius: 0;box-shadow: none;margin-right:25px;">
             Sections
+            <div class="caretRotate">
+              <i class="fas fa-caret-down"></i>
+            </div>
         </a>
-        <i class="fas fa-caret-down" style="float:right;"></i>
+
       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
         <div class="card-body">
           <ul>
@@ -65,7 +67,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <i id="borgar" class="burgerMenu fas fa-bars" onclick="openNav()"></i>
+      <i id="borgar" class="burgerMenu fas fa-bars clickSideNav"></i>
       <div class="navbar-brand js-scroll-trigger text-center">
         <img src="img/rotaractLogo01.png">
       </div>
@@ -89,7 +91,7 @@
     </div>
   </nav>
 
-<div id="main" class="articleMain">
+<div id="main" class="sectionMain">
     <div class="col-lg-4 col-xl-3" style="position: fixed;top:75px;padding: 0 !important">
       <div>
         <div class="articleSlide slide one">
@@ -156,14 +158,17 @@
 
 <!-- Side Menu Overlay -->
 <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "320px";
-}
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
+$(".rotate").click(function(){
+    $(".caretRotate").toggleClass("rotateUp"); 
+});
+
+$(".clickSideNav").click(function(){
+    $(".openSideNav").toggleClass("showSideNav"); 
+});
+
+
+
 </script>
 
   </body>

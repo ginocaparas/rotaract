@@ -237,7 +237,7 @@ a.nav-link:hover {
 
  /* The side navigation menu */
 .sidenav {
-  height: 100vh; /* 100% Full-height */
+  height: calc(100% - 75px); /* 100% Full-height minus 75px header */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1111; /* Stay on top */
@@ -245,12 +245,15 @@ a.nav-link:hover {
   left: 0;
   background-color: #D91B5C;
   overflow: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 1em; 
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     display: flex;
   flex-direction: column;
   overflow-y: scroll;
-scrollbar-width: thin;
+  scrollbar-width: thin;
+
+  left: -320px;
+  width:320px;
 }
 
 /* The navigation menu links */
@@ -301,7 +304,6 @@ scrollbar-width: thin;
 .sidenav .rotaryBanner {
 
   width: 100%;
-  height:220px;
   background: #3256A4;
   color: white;
   padding: 0.2em 0px 1.2em;
@@ -469,13 +471,25 @@ ALL MEDIA CALLS
 }
 
 
-.rotate{
-
-}
-
 .rotateUp{
     -ms-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+
+
+.openSideNav {
+  -moz-transition: all 0.2s ease-up-down;
+  -webkit-transition: all 0.2s ease-up-down;
+  transition: all 0.2s ease-up-down;
+}
+
+
+.showSideNav{
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: translate(320px, 0);
 }
