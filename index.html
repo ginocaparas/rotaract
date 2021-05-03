@@ -19,18 +19,47 @@
   
   <!-- Side Nav -->
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Sections</a>
-  <a href="#">Contact Us</a>
-  <a href="#">Become a Subscriber</a>
+  <div class="mySideNavWrapper">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <div id="accordion">
+    <div class="card" style="background: none;border: 0;outline: 0;border-radius:0;">
+        <a href="#" class="btn btn-link text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="border-radius: 0;box-shadow: none;">
+            Sections
+        </a>
 
-  <div class="rotaryBanner">
-    <div style="width: 80%;margin: 0.8em auto;">
-      <div style="margin-bottom:6px;">&lt; Back to Rotary Philippines</div>
-      <img src="img/philRotaryLogo01.png">
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          <ul>
+          <li>RotaLens</li>
+          <li>RAC Matter of the Month</li>
+          <li>RACStar</li>
+          <li>D'Pinned District</li>
+          <li>RAC Hall of Fame</li>
+          <li>On tRACk</li>
+
+          <li>A RACviser Once Said...</li>
+          <li>RACRound the World</li>
+          <li>RAC Kapehan!</li>
+          <li>RAC Speaks</li>
+          <li>RAC Reconnect</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
+
+    <a href="#">Contact Us</a>
+    <a href="#">Become a Subscriber</a>
+
+  </div>
+
+    <div class="rotaryBanner">
+      <div style="width: 80%;margin: 0.8em auto;">
+        <div style="margin-bottom:6px;">&lt; Back to Rotary Philippines</div>
+        <img src="img/philRotaryLogo01.png">
+      </div>
+    </div>
 
 </div>
 
