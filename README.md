@@ -2,7 +2,7 @@
 
 ![screenshot of Rotaract website Oct 2023](https://i.imgur.com/zVFbVhW.png)
 
-This is just a working prototype of the Rotaract - Rotary Philippines website. Created using HTML5. 
+This is just a working prototype of the [Rotaract - Rotary Philippines](https://i.imgur.com/zVFbVhW.png) website. Created using HTML5. 
 
 Initial hi-fidelity prototypes created via Adobe XD. Published here (along with a prototype of the main Rotary Philippines site) : 
 
