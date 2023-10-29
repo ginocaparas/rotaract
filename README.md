@@ -1,6 +1,6 @@
 # Rotaract Website
 
-![screenshot of Rotaract website Oct 2023](https://i.imgur.com/meGcsDM.png)
+![screenshot of Rotaract website Oct 2023](https://i.imgur.com/zVFbVhW.png)
 
 This is just a working prototype of the Rotaract - Rotary Philippines website. Created using HTML5. 
 
